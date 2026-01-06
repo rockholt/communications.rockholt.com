@@ -1,0 +1,30 @@
+title: Rockholt Communications
+description: Contract network, security, and infrastructure engineering services.
+url: "https://communications.rockholt.com"
+
+timezone: America/Los_Angeles
+markdown: kramdown
+
+theme: minima
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .github
+  - .git
+  - .gitignore
+  - .DS_Store
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

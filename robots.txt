@@ -1,3 +1,16 @@
 User-agent: *
 Allow: /
-Sitemap: https://rockholt.com/sitemap.xml
+
+# Keep crawlers out of non-public / operational paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /drafts/
+Disallow: /staging/
+Disallow: /.git/
+Disallow: /.github/
+
+# If you have internal search pages, block them (common SEO best practice)
+Disallow: /search
+
+Sitemap: https://communications.rockholt.com/sitemap.xml
